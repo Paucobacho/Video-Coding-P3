@@ -1,0 +1,12 @@
+C:\Users\Pau\Documents\GitHub\Video-Coding-P3\resources>mp4fragment BBB.mp4 BBB-frag.mp4
+
+
+https://www.bento4.com/developers/dash/
+encription: https://www.bento4.com/developers/dash/encryption_and_drm/
+
+C:\Users\Pau\Documents\GitHub\Video-Coding-P3\resources>mp4encrypt --method MPEG-CENC --key 1:a0a1a2a3a4a5a6a7a8a9aaabacadaeaf:0123456789abcdef --property 1:KID:121a0fca0f1b475b8910297fa8e0a07e --key 2:a0a1a2a3a4a5a6a7a8a9aaabacadaeaf:aaaaaaaabbbbbbbb --property 2:KID:121a0fca0f1b475b8910297fa8e0a07e BBB-frag.mp4 BBB-encrypted.mp4
+C:\Users\Pau\Documents\GitHub\Video-Coding-P3\resources>mp4dash --marlin --encryption-key=121a0fca0f1b475b8910297fa8e0a07e:a0a1a2a3a4a5a6a7a8a9aaabacadaeaf BBB-frag.mp4
+Encrypting track IDs [1, 2] in BBB-frag.mp4
+Parsing media file 1: tmpzuymih9i = Encrypted[BBB-frag.mp4]
+Splitting media file (audio) tmpzuymih9i = Encrypted[BBB-frag.mp4]
+Splitting media file (video) tmpzuymih9i = Encrypted[BBB-frag.mp4]
