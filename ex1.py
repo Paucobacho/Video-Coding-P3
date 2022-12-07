@@ -1,13 +1,15 @@
-# script that invokes ffmpeg to create a HLS transport stream container
-# with one video you already have (no DRM needed)
 import os
 
 source = 'resources/BBB.mp4'
 
 
-# https://ottverse.com/hls-packaging-using-ffmpeg-live-vod/
 def hls_container(video_path):
-    # scale the video to multiple resolutions
+    """
+    https://ottverse.com/hls-packaging-using-ffmpeg-live-vod/
+    This function invokes ffmpeg to create a HLS transport stream container with a provided video.
+    param video_path: local path to the video file
+    """
+
     string = 'ffmpeg -i {0} \
     -filter_complex \
     "[0:v]split=3[v1][v2][v3]; \

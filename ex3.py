@@ -7,6 +7,11 @@ source = 'resources/BBB.mp4'
 
 
 def stream(video_path):
+    """
+    Invokes ffmpeg to livestream through udp a provided video to a user-specified IP
+    (the receiving IP must be inside the same LAN as that of the stream provider)
+    param video_path: local path to the video file
+    """
 
     ip = input('Type an IP (same LAN) to send the stream to: ')
     print('Streaming video to {0}:23000 through udp ...'.format(ip))
