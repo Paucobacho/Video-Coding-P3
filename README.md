@@ -26,7 +26,7 @@ Once connected to a twitch [streaming](https://twitch.tv/leekbeats) some informa
 
 ![screenshot][image1]
 
-[image1]: https://github.com/Paucobacho/Video-Coding-P3/blob/main/Captura_2.PNG
+[image1]: https://github.com/Paucobacho/Video-Coding-P3/blob/main/captura.png
 
 Now, downloading a transport stream (.ts) file from the streaming and analyzing it with FFMPEG it can be seen that the stream video is encoded with h264 and the audio with aac:
 
